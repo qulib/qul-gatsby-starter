@@ -51,10 +51,10 @@
   border-radius: 0.25rem;
   text-decoration: none;
   font-weight: 700;
-  color: #cc3700;
+  color: $primary;
   text-align: center;
-  -webkit-box-shadow: inset 0 0 0 2px #cc3700;
-  box-shadow: inset 0 0 0 2px #f40;
+  -webkit-box-shadow: inset 0 0 0 2px $primary;
+  box-shadow: inset 0 0 0 2px $primary;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
@@ -119,7 +119,7 @@ $menu-label-color: $white-ter;
 // blog roll
 .blog-list-item {
   .is-featured {
-    background-color: #d6400033;
+    background-color: $primary;
   }
 
   header {
