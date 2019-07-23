@@ -1,16 +1,19 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import '../scss/style.scss'
 import useSiteMetadata from './SiteMetadata'
+
+import 'typeface-open-sans'
+import '../scss/style.scss'
+
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="en" className="has-navbar-fixed-top"/>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="theme-color" content="#fff" />

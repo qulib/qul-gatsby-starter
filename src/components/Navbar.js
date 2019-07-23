@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/qul-logo-middle.svg'
+import searchIcon from '../img/search-icon.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -13,14 +13,11 @@ const Navbar = class extends React.Component {
   }
 
   toggleHamburger = () => {
-    // toggle the active boolean in the state
     this.setState(
       {
         active: !this.state.active,
       },
-      // after state has been updated,
       () => {
-        // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
               navBarActiveClass: 'is-active',
@@ -35,7 +32,8 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar is-transparent is-fixed-top"
+        id="site-nav"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -55,33 +53,26 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
+          <div className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
-                About
+                Search
               </Link>
               <Link className="navbar-item" to="/products">
-                Products
+                Help & Services
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+                Locations & Hours
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
+                About Us
               </Link>
             </div>
+
             <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a className="navbar-item" href="#" rel="noopener noreferrer">
                 <span className="icon">
-                  <img src={github} alt="Github" />
+                  <img src={searchIcon} alt="Site Search" />
                 </span>
               </a>
             </div>
