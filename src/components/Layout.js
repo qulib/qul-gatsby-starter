@@ -5,6 +5,7 @@ import useSiteMetadata from './SiteMetadata'
 import 'typeface-open-sans'
 import '../scss/style.scss'
 
+// import UtilNavbar from '../components/UtilNavbar'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -13,7 +14,7 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
-        <html lang="en" className="has-navbar-fixed-top"/>
+        <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="theme-color" content="#fff" />
@@ -23,6 +24,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
+      {/* <UtilNavbar /> */}
       <Navbar />
       <div>{children}</div>
       <Footer />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/qul-logo-middle.svg'
-import searchIcon from '../img/search-icon.svg'
+import logo from '../img/qul-wordmark.svg'
+import { FaSearch } from 'react-icons/fa'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -32,14 +32,14 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent is-fixed-top"
+        className="navbar is-fixed-top is-spaced"
         id="site-nav"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            <Link to="/" className="navbar-item">
               <img src={logo} alt="Queen's University Library" />
             </Link>
             {/* Hamburger menu */}
@@ -54,7 +54,9 @@ const Navbar = class extends React.Component {
             </div>
           </div>
           <div className={`navbar-menu ${this.state.navBarActiveClass}`}>
-            <div className="navbar-start has-text-centered">
+            {/* <div className="navbar-start has-text-centered"></div> */}
+
+            <div className="navbar-end has-text-centered">
               <Link className="navbar-item" to="/about">
                 Search
               </Link>
@@ -67,12 +69,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 About Us
               </Link>
-            </div>
-
-            <div className="navbar-end has-text-centered">
               <a className="navbar-item" href="#" rel="noopener noreferrer">
                 <span className="icon">
-                  <img src={searchIcon} alt="Site Search" />
+                  <FaSearch />
                 </span>
               </a>
             </div>
