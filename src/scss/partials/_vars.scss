@@ -1,4 +1,9 @@
 /*
+* Typography
+*/
+$font-main: 'Open Sans', sans-serif;
+
+/*
 * Colours
 */
 $queens-logo-black: #231f20;
@@ -15,24 +20,9 @@ $clr-qul-gray: #8c8c8c;
 $clr-qul-light-gray: lighten($clr-qul-gray, 20%);
 
 /*
-* Colour Usage
-*/
-$clr-primary: $queens-logo-blue;
-$clr-secondary: $queens-logo-red;
-$clr-text-main: $queens-logo-black;
-$clr-text-link: $clr-qul-link-blue;
-$clr-text-link-visited: $queens-logo-purple;
-
-/*
-* Typography
-*/
-$font-main: 'Open Sans', sans-serif;
-
-
-/*
 * Bulma Overrides
+* see: https://bulma.io/documentation/customize/variables/
 */
-// see: https://bulma.io/documentation/customize/variables/
 $primary: $queens-logo-blue;
 $primary-invert: white;
 $family-sans-serif: $font-main;
@@ -43,4 +33,3 @@ $link-hover: $queens-logo-red;
 $navbar-burger-color: $primary;
 // $navbar-height: 5rem;
 // $navbar-breakpoint: $tablet;
-// $navbar-item-active-color: green;

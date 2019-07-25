@@ -2,7 +2,7 @@
   background-color: white;
 
   a {
-    color: $clr-text-link;
+    color: $link;
     text-decoration: none;
     font-weight: bold;
 
@@ -19,13 +19,12 @@
   h5,
   h6 {
     font-family: $font-main;
-    color: $clr-primary;
+    color: $primary;
     font-weight: 300;
   }
 
   h1 {
     font-size: 2.5rem;
-    // margin-top: 0;
   }
 
   h2 {
@@ -58,14 +57,14 @@
 
       &:before {
         content: '\25CF';
-        color: $clr-secondary;
+        color: $queens-logo-red;
         padding-right: 1rem;
       }
     }
   }
 
   blockquote {
-    color: $clr-secondary;
+    color: $queens-logo-red;
     font-style: italic;
     margin: 1rem 0;
     background: url(../img/blockquote.svg) no-repeat;

@@ -32,7 +32,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-fixed-top is-spaced"
+        className="navbar is-fixed-top"
         id="site-nav"
         role="navigation"
         aria-label="main-navigation"
@@ -54,7 +54,7 @@ const Navbar = class extends React.Component {
             </div>
           </div>
           <div className={`navbar-menu ${this.state.navBarActiveClass}`}>
-            {/* <div className="navbar-start has-text-centered"></div> */}
+
 
             <div className="navbar-end has-text-centered">
               <Link className="navbar-item" to="/about">
@@ -69,7 +69,7 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 About Us
               </Link>
-              <a className="navbar-item" href="#" rel="noopener noreferrer">
+              <a className="navbar-item" href="https://library.queensu.ca">
                 <span className="icon">
                   <FaSearch />
                 </span>

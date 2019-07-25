@@ -1,29 +1,25 @@
 #site-nav {
   border-bottom: 3px solid $primary;
-  // background: url(../img/qul-squares.svg) white no-repeat -5% / 10%;
-  background: url(../img/qul-squares.svg) white no-repeat -50px / 90px;
+  background: url(../img/qul-squares.svg) white no-repeat;
+  background-position: -22px center;
+  background-size: 90px;
 
   @include desktop {
-    background: url(../img/qul-squares.svg) white no-repeat -80px / 150px;
+    background-position: -25px center;
+    background-size: 100px;
   }
-
 
   .container {
     .navbar-brand {
-
       a {
         width: 350px;
-        margin-left: 30px;
+        margin-left: 60px;
 
         @include desktop {
-          width: 400px;
-          margin-left: 10px;
+          width: 380px;
+          margin-left: 40px;
         }
       }
-
-      // img {
-
-      // }
     }
 
     .navbar-burger span {
@@ -36,9 +32,5 @@
       font-size: 14px;
       font-weight: bold;
     }
-
-    // .icon {
-    //   font-size: 16px;
-    // }
   }
 }
