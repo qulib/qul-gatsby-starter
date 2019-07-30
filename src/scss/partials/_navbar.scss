@@ -1,24 +1,17 @@
 #site-nav {
   border-bottom: 3px solid $primary;
-  background: url(../img/qul-squares.svg) white no-repeat;
-  background-position: -22px center;
-  background-size: 90px;
-
-  @include desktop {
-    background-position: -25px center;
-    background-size: 100px;
-  }
 
   .container {
     .navbar-brand {
-      a {
-        width: 350px;
-        margin-left: 60px;
+      background: url(../img/qul-squares.svg) white no-repeat;
+      background-position: 0 center;
+      background-size: 120px;
+      padding-left: 70px;
+      margin-left: -70px;
 
-        @include desktop {
-          width: 380px;
-          margin-left: 40px;
-        }
+      a {
+        width: 360px;
+        margin-left: 50px;
       }
     }
 
